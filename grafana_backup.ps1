@@ -1,6 +1,6 @@
 # Set variables
 $grafanaUrl = "http://localhost:3000"
-$apiToken = "glsa_aguEDgEIZTlEY3BsgU12ytYCLer5hltV_ddd2a67b"
+$apiToken = $env:GRAFANA_API_TOKEN  # Get token from environment variable
 $headers = @{
     "Authorization" = "Bearer $apiToken"
     "Content-Type"  = "application/json"
@@ -84,3 +84,5 @@ git commit -m $commitMessage
 git push origin main
 
 Write-Host "Backup pushed to GitHub."
+#$env:GRAFANA_API_TOKEN = "glsa_aguEDgEIZTlEY3BsgU12ytYCLer5hltV_ddd2a67b"
+#powershell -ExecutionPolicy Bypass -File C:\work\grafanaConfig1\grafana_backup.ps1
