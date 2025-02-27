@@ -6,14 +6,14 @@
                  "canAdmin":  true,
                  "canStar":  true,
                  "canDelete":  true,
-                 "slug":  "test2",
-                 "url":  "/d/aeeasqzbkmk8wf/test2",
+                 "slug":  "singledoctor",
+                 "url":  "/d/aeeasqzbkmk8wf2/singledoctor",
                  "expires":  "0001-01-01T00:00:00Z",
-                 "created":  "2025-02-27T08:43:49+03:00",
-                 "updated":  "2025-02-27T17:14:05+03:00",
+                 "created":  "2025-02-27T16:42:40+03:00",
+                 "updated":  "2025-02-27T16:46:54+03:00",
                  "updatedBy":  "admin",
                  "createdBy":  "admin",
-                 "version":  31,
+                 "version":  2,
                  "hasAcl":  false,
                  "isFolder":  false,
                  "folderId":  0,
@@ -55,7 +55,7 @@
                       "editable":  true,
                       "fiscalYearStartMonth":  0,
                       "graphTooltip":  0,
-                      "id":  1,
+                      "id":  3,
                       "links":  [
 
                                 ],
@@ -169,8 +169,8 @@
                                                              "initialized":  true,
                                                              "interval":  "",
                                                              "intervalFactor":  1,
-                                                             "query":  "SELECT \r\n    doctor_id, \r\n    doctor_fullname, \r\n    SUM(sum_discount_per_plan) AS sumCourse, \r\n    COUNT(DISTINCT plan_id) AS countCourse \r\nFROM (\r\n    SELECT \r\n        plan_id, \r\n        doctor_id, \r\n        doctor_fullname, \r\n        MAX(COALESCE(sum_discount, 0)) AS sum_discount_per_plan \r\n    FROM doctor_course_summary \r\n    WHERE \r\n        \r\n         ( clinic_id IN( ${clinic_id}) )\r\n        AND plan_date BETWEEN $from AND $to \r\n        \r\n    GROUP BY \r\n        plan_id, doctor_id, doctor_fullname\r\n) AS plans \r\nGROUP BY \r\n    doctor_fullname, doctor_id",
-                                                             "rawQuery":  "/* grafana dashboard=test2, user=1 */\nSELECT \r\n    doctor_id, \r\n    doctor_fullname, \r\n    SUM(sum_discount_per_plan) AS sumCourse, \r\n    COUNT(DISTINCT plan_id) AS countCourse \r\nFROM (\r\n    SELECT \r\n        plan_id, \r\n        doctor_id, \r\n        doctor_fullname, \r\n        MAX(COALESCE(sum_discount, 0)) AS sum_discount_per_plan \r\n    FROM doctor_course_summary \r\n    WHERE \r\n        \r\n         ( clinic_id IN( 1) )\r\n        AND plan_date BETWEEN 1738071701 AND 1740663701 \r\n        \r\n    GROUP BY \r\n        plan_id, doctor_id, doctor_fullname\r\n) AS plans \r\nGROUP BY \r\n    doctor_fullname, doctor_id",
+                                                             "query":  "SELECT \r\n    doctor_id, \r\n    doctor_fullname, \r\n    SUM(sum_discount_per_plan) AS sumCourse, \r\n    COUNT(DISTINCT plan_id) AS countCourse \r\nFROM (\r\n    SELECT \r\n        plan_id, \r\n        doctor_id, \r\n        doctor_fullname, \r\n        MAX(COALESCE(sum_discount, 0)) AS sum_discount_per_plan \r\n    FROM doctor_course_summary \r\n    WHERE \r\n        doctor_id = ${doctor_id} AND\r\n         ( clinic_id IN( ${clinic_id}) )\r\n        AND plan_date BETWEEN $from AND $to \r\n        \r\n    GROUP BY \r\n        plan_id, doctor_id, doctor_fullname\r\n) AS plans \r\nGROUP BY \r\n    doctor_fullname, doctor_id",
+                                                             "rawQuery":  "/* grafana dashboard=test1, user=1 */\nSELECT \r\n    doctor_id, \r\n    doctor_fullname, \r\n    SUM(sum_discount_per_plan) AS sumCourse, \r\n    COUNT(DISTINCT plan_id) AS countCourse \r\nFROM (\r\n    SELECT \r\n        plan_id, \r\n        doctor_id, \r\n        doctor_fullname, \r\n        MAX(COALESCE(sum_discount, 0)) AS sum_discount_per_plan \r\n    FROM doctor_course_summary \r\n    WHERE \r\n        doctor_id =  AN\r\n         ( clinic_id IN( 1) )\r\n        AND plan_date BETWEEN 1738070133 AND 1740662133 \r\n        \r\n    GROUP BY \r\n        plan_id, doctor_id, doctor_fullname\r\n) AS plans \r\nGROUP BY \r\n    doctor_fullname, doctor_id",
                                                              "refId":  "A",
                                                              "round":  "0s",
                                                              "showFormattedSQL":  false,
@@ -243,9 +243,9 @@
 
                                      },
                       "timezone":  "browser",
-                      "title":  "test2",
-                      "uid":  "aeeasqzbkmk8wf",
-                      "version":  31,
+                      "title":  "singleDoctor",
+                      "uid":  "aeeasqzbkmk8wf2",
+                      "version":  2,
                       "weekStart":  ""
                   }
 }

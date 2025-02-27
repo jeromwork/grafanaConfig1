@@ -1,15 +1,32 @@
-﻿{
-    "orgId":  1,
-    "userId":  1,
-    "uid":  "feearpr7kpt6oe",
-    "email":  "admin@localhost",
-    "name":  "",
-    "avatarUrl":  "/avatar/46d229b033af06a191ff2267bca9ae56",
-    "login":  "admin",
-    "role":  "Admin",
-    "lastSeenAt":  "2025-02-27T10:23:31+03:00",
-    "lastSeenAtAge":  "8 minutes",
-    "isDisabled":  false,
-    "authLabels":  null,
-    "isExternallySynced":  false
-}
+﻿[
+    {
+        "orgId":  1,
+        "userId":  3,
+        "uid":  "feebrwkedi8e8a",
+        "email":  "alpaidze",
+        "name":  "ÐÐ»Ð¿Ð°Ð¸Ð´Ð·Ðµ ÐÐµÐ¾ÑÐ³Ð¸Ð¹ ÐÐ°Ñ\u0085Ð°ÑÐ¾Ð²Ð¸Ñ",
+        "avatarUrl":  "/avatar/0124f75ee2846c98b3cc4028598f6034",
+        "login":  "10000069",
+        "role":  "Viewer",
+        "lastSeenAt":  "2025-02-27T16:48:16+03:00",
+        "lastSeenAtAge":  "27 minutes",
+        "isDisabled":  false,
+        "authLabels":  null,
+        "isExternallySynced":  false
+    },
+    {
+        "orgId":  1,
+        "userId":  1,
+        "uid":  "feearpr7kpt6oe",
+        "email":  "admin@localhost",
+        "name":  "",
+        "avatarUrl":  "/avatar/46d229b033af06a191ff2267bca9ae56",
+        "login":  "admin",
+        "role":  "Admin",
+        "lastSeenAt":  "2025-02-27T17:15:09+03:00",
+        "lastSeenAtAge":  "\u003c 1 minute",
+        "isDisabled":  false,
+        "authLabels":  null,
+        "isExternallySynced":  false
+    }
+]
