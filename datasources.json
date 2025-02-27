@@ -1,0 +1,22 @@
+﻿{
+    "id":  1,
+    "uid":  "beeasg0z8p69sa",
+    "orgId":  1,
+    "name":  "vertamedia-clickhouse-datasource",
+    "type":  "vertamedia-clickhouse-datasource",
+    "typeName":  "Altinity plugin for ClickHouse",
+    "typeLogoUrl":  "public/plugins/vertamedia-clickhouse-datasource/img/altinity_logo.svg",
+    "access":  "proxy",
+    "url":  "http://127.0.0.1:8123",
+    "user":  "",
+    "database":  "",
+    "basicAuth":  true,
+    "isDefault":  true,
+    "jsonData":  {
+                     "adHocValuesQuery":  "SELECT DISTINCT {field} AS value FROM {database}.{table} LIMIT 300",
+                     "dataSourceUrl":  "http://127.0.0.1:8123",
+                     "defaultDatabase":  "eastlar",
+                     "useDefaultConfiguration":  true
+                 },
+    "readOnly":  false
+}

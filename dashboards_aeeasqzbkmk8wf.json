@@ -1,0 +1,211 @@
+﻿{
+    "meta":  {
+                 "type":  "db",
+                 "canSave":  true,
+                 "canEdit":  true,
+                 "canAdmin":  true,
+                 "canStar":  true,
+                 "canDelete":  true,
+                 "slug":  "test1",
+                 "url":  "/d/aeeasqzbkmk8wf/test1",
+                 "expires":  "0001-01-01T00:00:00Z",
+                 "created":  "2025-02-27T08:43:49+03:00",
+                 "updated":  "2025-02-27T09:09:17+03:00",
+                 "updatedBy":  "admin",
+                 "createdBy":  "admin",
+                 "version":  4,
+                 "hasAcl":  false,
+                 "isFolder":  false,
+                 "folderId":  0,
+                 "folderUid":  "",
+                 "folderTitle":  "General",
+                 "folderUrl":  "",
+                 "provisioned":  false,
+                 "provisionedExternalId":  "",
+                 "annotationsPermissions":  {
+                                                "dashboard":  {
+                                                                  "canAdd":  true,
+                                                                  "canEdit":  true,
+                                                                  "canDelete":  true
+                                                              },
+                                                "organization":  {
+                                                                     "canAdd":  true,
+                                                                     "canEdit":  true,
+                                                                     "canDelete":  true
+                                                                 }
+                                            }
+             },
+    "dashboard":  {
+                      "annotations":  {
+                                          "list":  [
+                                                       {
+                                                           "builtIn":  1,
+                                                           "datasource":  {
+                                                                              "type":  "grafana",
+                                                                              "uid":  "-- Grafana --"
+                                                                          },
+                                                           "enable":  true,
+                                                           "hide":  true,
+                                                           "iconColor":  "rgba(0, 211, 255, 1)",
+                                                           "name":  "Annotations \u0026 Alerts",
+                                                           "type":  "dashboard"
+                                                       }
+                                                   ]
+                                      },
+                      "editable":  true,
+                      "fiscalYearStartMonth":  0,
+                      "graphTooltip":  0,
+                      "id":  1,
+                      "links":  [
+
+                                ],
+                      "panels":  [
+                                     {
+                                         "datasource":  {
+                                                            "type":  "vertamedia-clickhouse-datasource",
+                                                            "uid":  "beeasg0z8p69sa"
+                                                        },
+                                         "fieldConfig":  {
+                                                             "defaults":  {
+                                                                              "color":  {
+                                                                                            "mode":  "palette-classic"
+                                                                                        },
+                                                                              "custom":  {
+                                                                                             "align":  "auto",
+                                                                                             "cellOptions":  {
+                                                                                                                 "type":  "auto"
+                                                                                                             },
+                                                                                             "inspect":  false
+                                                                                         },
+                                                                              "mappings":  [
+
+                                                                                           ],
+                                                                              "thresholds":  {
+                                                                                                 "mode":  "absolute",
+                                                                                                 "steps":  [
+                                                                                                               {
+                                                                                                                   "color":  "green",
+                                                                                                                   "value":  null
+                                                                                                               },
+                                                                                                               {
+                                                                                                                   "color":  "red",
+                                                                                                                   "value":  80
+                                                                                                               }
+                                                                                                           ]
+                                                                                             }
+                                                                          },
+                                                             "overrides":  [
+
+                                                                           ]
+                                                         },
+                                         "gridPos":  {
+                                                         "h":  8,
+                                                         "w":  12,
+                                                         "x":  0,
+                                                         "y":  0
+                                                     },
+                                         "id":  1,
+                                         "options":  {
+                                                         "barRadius":  0,
+                                                         "barWidth":  0.97,
+                                                         "cellHeight":  "sm",
+                                                         "footer":  {
+                                                                        "countRows":  false,
+                                                                        "fields":  "",
+                                                                        "reducer":  [
+                                                                                        "sum"
+                                                                                    ],
+                                                                        "show":  false
+                                                                    },
+                                                         "fullHighlight":  false,
+                                                         "groupWidth":  0.7,
+                                                         "legend":  {
+                                                                        "calcs":  [
+
+                                                                                  ],
+                                                                        "displayMode":  "list",
+                                                                        "placement":  "bottom",
+                                                                        "showLegend":  true
+                                                                    },
+                                                         "orientation":  "auto",
+                                                         "showHeader":  true,
+                                                         "showValue":  "auto",
+                                                         "sortBy":  [
+                                                                        {
+                                                                            "desc":  true,
+                                                                            "displayName":  "countCourse"
+                                                                        }
+                                                                    ],
+                                                         "stacking":  "none",
+                                                         "tooltip":  {
+                                                                         "hideZeros":  false,
+                                                                         "mode":  "multi",
+                                                                         "sort":  "none"
+                                                                     },
+                                                         "xField":  "doctor_id",
+                                                         "xTickLabelRotation":  0,
+                                                         "xTickLabelSpacing":  0
+                                                     },
+                                         "pluginVersion":  "11.5.2",
+                                         "targets":  [
+                                                         {
+                                                             "adHocFilters":  [
+
+                                                                              ],
+                                                             "adHocValuesQuery":  "",
+                                                             "add_metadata":  true,
+                                                             "contextWindowSize":  "10",
+                                                             "database":  "eastlar",
+                                                             "datasource":  {
+                                                                                "type":  "vertamedia-clickhouse-datasource",
+                                                                                "uid":  "beeasg0z8p69sa"
+                                                                            },
+                                                             "dateTimeColDataType":  "doctor_id",
+                                                             "dateTimeType":  "TIMESTAMP64_3",
+                                                             "editorMode":  "sql",
+                                                             "extrapolate":  true,
+                                                             "format":  "table",
+                                                             "formattedQuery":  "SELECT doctor_id, doctor_fullname, SUM(sum_discount_per_plan) AS sumCourse, COUNT(DISTINCT plan_id) AS countCourse FROM (SELECT plan_id, doctor_id, doctor_fullname, MAX(COALESCE(sum_discount, 0)) AS sum_discount_per_plan FROM doctor_course_summary WHERE plan_date BETWEEN $from AND $to GROUP BY plan_id, doctor_id, doctor_fullname) AS plans GROUP BY doctor_fullname, doctor_id",
+                                                             "initialized":  true,
+                                                             "interval":  "",
+                                                             "intervalFactor":  1,
+                                                             "query":  "SELECT doctor_id, doctor_fullname, SUM(sum_discount_per_plan) AS sumCourse, COUNT(DISTINCT plan_id) AS countCourse FROM (SELECT plan_id, doctor_id, doctor_fullname, MAX(COALESCE(sum_discount, 0)) AS sum_discount_per_plan FROM doctor_course_summary WHERE plan_date BETWEEN $from AND $to GROUP BY plan_id, doctor_id, doctor_fullname) AS plans GROUP BY doctor_fullname, doctor_id",
+                                                             "rawQuery":  "/* grafana dashboard=test1, user=1 */\nSELECT doctor_id, doctor_fullname, SUM(sum_discount_per_plan) AS sumCourse, COUNT(DISTINCT plan_id) AS countCourse FROM (SELECT plan_id, doctor_id, doctor_fullname, MAX(COALESCE(sum_discount, 0)) AS sum_discount_per_plan FROM doctor_course_summary WHERE plan_date BETWEEN 1740614491 AND 1740636091 GROUP BY plan_id, doctor_id, doctor_fullname) AS plans GROUP BY doctor_fullname, doctor_id",
+                                                             "refId":  "A",
+                                                             "round":  "0s",
+                                                             "showFormattedSQL":  false,
+                                                             "showHelp":  false,
+                                                             "skip_comments":  true,
+                                                             "table":  "doctor_course_summary",
+                                                             "useWindowFuncForMacros":  true
+                                                         }
+                                                     ],
+                                         "title":  "Doctor Course Summary",
+                                         "type":  "table"
+                                     }
+                                 ],
+                      "preload":  false,
+                      "refresh":  "",
+                      "schemaVersion":  40,
+                      "tags":  [
+
+                               ],
+                      "templating":  {
+                                         "list":  [
+
+                                                  ]
+                                     },
+                      "time":  {
+                                   "from":  "now-30d",
+                                   "to":  "now"
+                               },
+                      "timepicker":  {
+
+                                     },
+                      "timezone":  "browser",
+                      "title":  "test1",
+                      "uid":  "aeeasqzbkmk8wf",
+                      "version":  4,
+                      "weekStart":  ""
+                  }
+}
